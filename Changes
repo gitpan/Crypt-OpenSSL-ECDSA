@@ -12,3 +12,8 @@ Revision history for Perl extension Crypt::OpenSSL::ECDSA.
       - ECDSA_SIG is now a blessed object
       - Added ECDSA_SIG get_r set_r get_s get_s functions and tests
       - Documentation still to be done
+
+0.04 Jan 2 2015
+      - In ECDSA.pm, use version restriction eased to 5.6.2
+      - Added documentation for get_s and get_r, courtesy Dick Franks.
+      - Fixed leaks in set_r and set_s

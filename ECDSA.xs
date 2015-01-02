@@ -168,6 +168,8 @@ set_r(ecdsa_sig, r_SV)
         STRLEN len;
     CODE:
         s = SvPV(r_SV, len);
+        if (ecdsa_sig->r)
+            BN_free(ecdsa_sig->r);
         ecdsa_sig->r = BN_bin2bn((const unsigned char *)s, len, NULL);
 
 void
@@ -179,6 +181,8 @@ set_s(ecdsa_sig, s_SV)
         STRLEN len;
     CODE:
         s = SvPV(s_SV, len);
+        if (ecdsa_sig->s)
+            BN_free(ecdsa_sig->s);
         ecdsa_sig->s = BN_bin2bn((const unsigned char *)s, len, NULL);
 
 
