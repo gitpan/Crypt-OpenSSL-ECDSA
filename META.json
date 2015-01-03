@@ -32,10 +32,11 @@
       },
       "runtime" : {
          "requires" : {
-            "Crypt::OpenSSL::Bignum" : "0.04"
+            "Crypt::OpenSSL::Bignum" : "0.04",
+            "Crypt::OpenSSL::EC" : "0.05"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.04"
+   "version" : "0.05"
 }

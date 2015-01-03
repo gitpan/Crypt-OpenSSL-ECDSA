@@ -17,3 +17,6 @@ Revision history for Perl extension Crypt::OpenSSL::ECDSA.
       - In ECDSA.pm, use version restriction eased to 5.6.2
       - Added documentation for get_s and get_r, courtesy Dick Franks.
       - Fixed leaks in set_r and set_s
+
+0.05 Jan 3 2015
+      - Added Crypt::OpenSSL::EC as a prerequisite.

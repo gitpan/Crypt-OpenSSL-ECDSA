@@ -9,7 +9,8 @@ my $openssl_prefix = $ENV{OPENSSL_PREFIX} || '/usr';
 WriteMakefile(
     NAME              => 'Crypt::OpenSSL::ECDSA',
     VERSION_FROM      => 'lib/Crypt/OpenSSL/ECDSA.pm', # finds $VERSION
-    PREREQ_PM         => {'Crypt::OpenSSL::Bignum' => 0.04
+    PREREQ_PM         => {'Crypt::OpenSSL::Bignum' => 0.04,
+			  'Crypt::OpenSSL::EC' => 0.05,
                          },
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Crypt/OpenSSL/ECDSA.pm', # retrieve abstract from module

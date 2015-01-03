@@ -19,4 +19,5 @@ no_index:
     - inc
 requires:
   Crypt::OpenSSL::Bignum: '0.04'
-version: '0.04'
+  Crypt::OpenSSL::EC: '0.05'
+version: '0.05'
